@@ -58,11 +58,6 @@ public class Scanner {
     private void scanToken() {
         char c = advance();
         switch (c) {
-            case 'o':
-                if (match('r')) {
-                    addToken(OR);
-                }
-                break;
             case '(': addToken(LEFT_PAREN); break;
             case ')': addToken(RIGHT_PAREN); break;
             case '{': addToken(LEFT_BRACE); break;
